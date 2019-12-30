@@ -1,0 +1,37 @@
+<p>all works!</p>
+<table>
+<tr>
+ 
+    <td>"id_product"</td>
+    <td> "designation"</td>
+        <td>"brand"</td>
+            <td> "price"</td>
+                <td>"quantity"</td>
+                    <td>"short_Description"</td>
+                        <td> "long_Description"</td>
+                            <td> "picture_Path"</td>
+    <td>"category"</td>
+   <td>"basketlines"</td>
+
+</tr>
+
+<tr *ngFor="let p of liste">
+    <td>{{p.id_product}}</td>
+    <td>{{p.designation}}</td>
+    <td>{{p.brand}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.quantity}}</td>
+    <td>{{p.short_Description}}</td>
+    <td>{{p.long_Description}}</td>
+    <td>{{p.picture_Path}}</td>
+    <td>{{p.category}}</td>
+    <td>{{p.basketlines}}</td>
+
+ <button (click)="delete1(p.id_product)">delete1</button>
+<button (click)="delete2(p.id_product)">delete2</button>
+ <button (click)="update(p.id_product)">update</button>
+        
+
+
+</tr>
+</table>

@@ -1,0 +1,16 @@
+
+<p>delete works!</p>
+<h1>Voulez vous supprimer?</h1>
+<div *ngIf="p">
+<td>{{p.id_product}}</td>
+    <td>{{p.designation}}</td>
+    <td>{{p.brand}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.quantity}}</td>
+    <td>{{p.short_Description}}</td>
+    <td>{{p.long_Description}}</td>
+    <td>{{p.picture_Path}}</td>
+    <td>{{p.category}}</td>
+    <td>{{p.basketlines}}</td></div>
+<p> <button (click)="delete()">supprimer</button>
+<p> <button (click)="cancel()">cancel</button>

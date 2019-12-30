@@ -1,0 +1,26 @@
+
+<div *ngIf="p">
+<p>update works!</p>
+
+id_product:<input type="number"[(ngModel)]="p.id_product"disabled/>
+<br>
+designation:<input type="text"[(ngModel)]="p.designation"/>
+<br>
+brand:<input type="text"[(ngModel)]="p.brand"/>
+<br>
+price:<input type="number"[(ngModel)]="p.price"/>
+<br>
+
+quantity:<input type="number"[(ngModel)]="p.quantity"/>
+<br>
+short_Description:<input type="text"[(ngModel)]="p.short_Description"/>
+<br>
+long_Description:<input type="text"[(ngModel)]="p.long_Description"/>
+<br>
+picture_Path:<input type="text"[(ngModel)]="p.picture_Path"/>
+<br>
+
+
+
+<p> <button (click)="updateProduct()">save</button>
+</div>
